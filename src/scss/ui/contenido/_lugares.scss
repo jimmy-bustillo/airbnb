@@ -10,9 +10,11 @@
 
     @include m.tablet {
       @include m.grid(2, 2rem);
+      overflow-x: hidden;
     }
     @include m.desktop {
       @include m.grid(4, 2rem);
+      scroll-snap-type: none;
     }
   }
 }
